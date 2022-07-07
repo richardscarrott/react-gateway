@@ -2,6 +2,8 @@
 
 > Render React DOM into a new context (aka "Portal")
 
+Forked to fix sort order of `children` https://github.com/cloudflare/react-gateway/pull/48
+
 This can be used to implement various UI components such as modals.
 See [`react-modal2`](https://github.com/cloudflare/react-modal2).
 
