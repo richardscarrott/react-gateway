@@ -1,5 +1,5 @@
 {
-  "name": "react-gateway",
+  "name": "@riscarrott/react-gateway",
   "version": "3.0.0",
   "description": "Render React DOM into a new context",
   "main": "lib/index.js",
