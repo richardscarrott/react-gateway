@@ -18,6 +18,7 @@ export default class GatewayRegistry {
 
     this._containers[name].setState({
       children: Object.keys(this._children[name])
+        // https://github.com/cloudflare/react-gateway/pull/48
         // We want to render in the order the children were registered (i.e. mounted). We can't
         // rely on insertion order because a <Gateway into="foo" /> may rerender causing insertion
         // order to vary.
