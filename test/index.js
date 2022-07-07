@@ -81,7 +81,7 @@ describe('Gateway', function() {
     );
   });
 
-  it('should render multiple children into a single GatewayDest', function() {
+  it('should render multiple children into a single GatewayDest in order', function() {
     assertEqual(
       <GatewayProvider>
         <div>
@@ -97,6 +97,30 @@ describe('Gateway', function() {
             <Gateway into="foo">
               <div>Three</div>
             </Gateway>
+            <Gateway into="foo">
+              <div>Four</div>
+            </Gateway>
+            <Gateway into="foo">
+              <div>Five</div>
+            </Gateway>
+            <Gateway into="foo">
+              <div>Six</div>
+            </Gateway>
+            <Gateway into="foo">
+              <div>Seven</div>
+            </Gateway>
+            <Gateway into="foo">
+              <div>Eight</div>
+            </Gateway>
+            <Gateway into="foo">
+              <div>Nine</div>
+            </Gateway>
+            <Gateway into="foo">
+              <div>Ten</div>
+            </Gateway>
+            <Gateway into="foo">
+              <div>Eleven</div>
+            </Gateway>
           </section>
           <GatewayDest name="foo"/>
         </div>
@@ -110,6 +134,14 @@ describe('Gateway', function() {
           <div>One</div>
           <div>Two</div>
           <div>Three</div>
+          <div>Four</div>
+          <div>Five</div>
+          <div>Six</div>
+          <div>Seven</div>
+          <div>Eight</div>
+          <div>Nine</div>
+          <div>Ten</div>
+          <div>Eleven</div>
         </div>
       </div>
     );
